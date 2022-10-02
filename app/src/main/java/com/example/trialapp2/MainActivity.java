@@ -76,6 +76,7 @@ public class MainActivity extends AppCompatActivity {
 
         tipDisplay.setText(""+tipAmount);
         totalDisplay.setText(""+totalAmount);
+        // In dev_branch
     }
 
 }
