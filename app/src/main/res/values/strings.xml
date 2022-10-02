@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">TrialApp2</string>
+    <string name="app_base">Base</string>
+    <string name="app_tippercent">0%</string>
+    <string name="app_tip">Tip</string>
+    <string name="app_total">Total</string>
+    <string name="btn_calculate">Calculate</string>
+</resources>

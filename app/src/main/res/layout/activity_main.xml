@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/relLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/activity_layout_vertical_margin">
+
+        <TextView
+            android:id="@+id/txtBase"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/txtTotal"
+            android:text="@string/app_base"
+            android:textSize="@dimen/textSize" />
+
+        <TextView
+            android:id="@+id/txtTippercent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtBase"
+            android:layout_alignRight="@id/txtTotal"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:text="@string/app_tippercent"
+            android:textSize="@dimen/textSize"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtTip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtTippercent"
+            android:layout_alignRight="@id/txtTotal"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:text="@string/app_tip"
+            android:textSize="@dimen/textSize" />
+
+        <TextView
+            android:id="@+id/txtTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtTip"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:text="@string/app_total"
+            android:textSize="@dimen/textSize" />
+
+        <EditText
+            android:id="@+id/edtBase"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_toRightOf="@id/txtBase"
+            android:hint="Bill"
+            android:inputType="number|numberDecimal"
+            android:minWidth="48dp"
+            android:textSize="@dimen/textSize" />
+
+        <SeekBar
+            android:id="@+id/seekBar"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edtBase"
+            android:layout_alignLeft="@id/edtBase"
+            android:layout_alignBottom="@id/txtTippercent"
+            android:layout_toRightOf="@id/txtTippercent" />
+
+        <TextView
+            android:id="@+id/tipDisplay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/seekBar"
+            android:layout_alignLeft="@id/edtBase"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_toRightOf="@id/txtTip"
+            android:textSize="@dimen/textSize" />
+
+        <TextView
+            android:id="@+id/totalDisplay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tipDisplay"
+            android:layout_alignLeft="@id/edtBase"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_toRightOf="@id/txtTip"
+            android:textSize="@dimen/textSize" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
